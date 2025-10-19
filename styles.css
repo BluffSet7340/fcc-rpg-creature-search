@@ -1,0 +1,213 @@
+:root {
+    /* Define your color palette */
+    --blue-background: #1B1B32;
+    --secondary-color: #7F21AB;
+  
+    /* Define spacing and font variables */
+    --border-radius: 8px;
+    --font-size-base: 16px;
+    --spacing: 1rem;
+    --text-size: 1rem;
+    --text-size-sm: 0.875rem;
+
+  }
+
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* gap: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--blue-background);
+    /* height: 100vh; */
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    border-radius: var(--border-radius);
+    padding: calc(var(--spacing) * 1);
+    width: 325px;
+    /* strong, soft-edged shadow */
+    box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
+}
+
+.result-container{
+    margin-top: var(--spacing);
+    /* background: gray; */
+    width: 95%;
+    min-height: 200px;
+    padding-top: calc(var(--spacing)*1.25);
+}
+
+#creature-name{
+    font-size: var(--text-size);
+    font-weight: bold;   
+}
+
+.prompt{
+    margin-bottom: var(--spacing);
+}
+
+.input-box{
+    width: 150px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.search-btn{
+    width: 80px;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.stat-container{
+    display: flex;
+    gap: calc(var(--spacing)/4);
+    margin-top: 0.275rem;
+    font-size: var(--text-size-sm)
+}
+
+.category-container{
+    display: flex;
+    gap: calc(var(--spacing)/4);
+    margin-top: 0.4rem;
+    margin-bottom: var(--spacing);
+}
+
+.cat{
+    padding: 8px 14px 8px 14px;
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.move{
+    font-weight: bold;
+    margin-bottom: 0.275rem;
+}
+
+.move-desc{
+    font-size: 0.8rem;
+    /* font-weight: 500; */
+}
+
+.stats-table{
+    width: 300px;
+    border-collapse: separate; /* needed for cell spacing */
+    border-spacing: 8px; /* margin between cells */
+}
+
+.stats-table th,
+.stats-table td{
+    background: var(--secondary-color);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 550px) {
+    .card {
+        width: 400px;
+    }
+    
+    .stats-table {
+        width: 380px;
+    }
+}
+
+
+/* colors for the types */
+.fire{
+    background-color: #ff6f52;
+}
+
+.water{
+    background-color: #42a1ff;
+}
+
+.rock{
+    background-color: #baaa66;
+}
+
+.ice{
+    background-color: #66ccfe;
+}
+
+.fairy{
+    background-color: #ed99ed;
+}
+
+.grass{
+    background-color: #78cc55;
+}
+
+.dark{
+    background-color: #b59682;
+}
+
+.ground{
+    background-color: #dfba52;
+}
+
+.flying{
+    background-color: #8899ff;
+}
+
+.dark{
+    background-color: #b59682;
+}
+
+.psychic{
+    background-color: #ff66a3;
+}
+
+.ghost{
+    background-color: #9995d0;
+}
+
+.poison{
+    background-color: #c68bb7;
+}
+
+.steel{
+    background-color: #abaabb;
+}
+
+.electric{
+    background-color: #fecc33
+}
+
+.dragon{
+    background-color: #9e93f1;
+}
+
+.bug{
+    background-color: #aabb23; 
+}
