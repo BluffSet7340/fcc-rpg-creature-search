@@ -8,3 +8,10 @@ Following are the biggest mistakes that I made -
 4. Used the find method to get the specific object for specific attributes like HP, attack, and defense. Using array indexing would be a better idea.
 
 I also used Cursor to take care of repetitive code - like generating the initial declarations for grabbing the DOM elements to be modified.
+
+
+## Demo Images - 
+
+![Searching a Creature using Name](https://github.com/BluffSet7340/fcc-rpg-creature-search/blob/main/rpg-demo-1.png)
+![Searching a Creature using Number](https://github.com/BluffSet7340/fcc-rpg-creature-search/blob/main/rpg-demo-2.png)
+![Creature not Found](https://github.com/BluffSet7340/fcc-rpg-creature-search/blob/main/rpg-demo-3.png)
